@@ -1,2 +1,2 @@
 # NOVATEC-Page
-A landing page about an university called NOVATEC
+A landing page of an university called NOVATEC
