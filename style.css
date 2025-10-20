@@ -1,0 +1,40 @@
+body{
+    background-color: lightblue;
+}
+
+/*<weight>: Use a value from 100 to 900*/
+/*<uniquifier>: Use a unique and descriptive class name*/
+
+.desktop-subtitle-regular{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 16;
+  font-style: normal;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen-name{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar h2{
+    color: white;
+    
+}
+
+.nav-bar p{
+    padding: 31px;
+   /*font-family: Inter;*/
+    color: white;
+}
