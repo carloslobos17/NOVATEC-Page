@@ -2,7 +2,7 @@ body{
     background-color: white;
     padding: 0;
     margin: 0;
-    width: 100%;
+    max-width: 100%;
 }
 
 /*<weight>: Use a value from 100 to 900*/
@@ -65,9 +65,10 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1196px;
+    max-width: 100%;
     margin: 25px 122px 61px;
     padding: 0;
+
 }
 
 .imagen-name{
@@ -105,6 +106,7 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 120px;
+    max-width: 100%;
 }
 
 .title{
