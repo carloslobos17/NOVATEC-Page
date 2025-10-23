@@ -1,0 +1,190 @@
+.career-h1 {
+    margin-left: 10rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+}
+
+.career-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1=5.5rem;
+    padding-bottom: 5rem;
+}
+
+.image-main {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    overflow: hidden;
+}
+
+.image-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content-right {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right-top-section,
+.right-mid-section,
+.right-bottom-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.right-bottom-section {
+    border-bottom: none;
+}
+
+.image-right-top,
+.image-right-mid,
+.image-right-bottom {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.image-right-top img,
+.image-right-mid img,
+.image-right-bottom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.list-section {
+    flex-grow: 1;
+}
+
+.list-section h3 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.list-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-section li {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.list-section li::before {
+    content: "• ";
+    color: #333;
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
+
+.content-bottom-left,
+.content-bottom-right {
+    grid-row: 2 / 3;
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    align-items: flex-start;
+}
+
+.content-bottom-left {
+    grid-column: 1 / 2;
+}
+
+.content-bottom-right {
+    grid-column: 2 / 3;
+}
+
+.content-bottom-left {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* --- SECCIÓN INFERIOR DERECHA (Imagen grande) --- */
+
+.image-bottom-right {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    overflow: hidden;
+}
+
+.image-bottom-right img {
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+    display: block;
+}
+
+.category-block {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.list-image {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.list-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.list-details {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
+
+.list-details h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Reutiliza el estilo de lista para los bullets de la parte superior */
+.list-details ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-details li {
+    font-size: 0.95rem;
+    margin-bottom: 0.3rem;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.list-details li::before {
+    content: "• ";
+    color: #333;
+    font-weight: bold;
+    margin-right: 0.2rem;
+}
