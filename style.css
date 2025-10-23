@@ -238,8 +238,7 @@ header {
 }
 
 .news-imagen img {
-    width: 578px;
-    border-radius: 10px;
+    width: 580px;
 }
 
 .news-grid {
@@ -280,6 +279,7 @@ header {
 
 .information-container {
     text-align: center;
+    height: 534px;
     color: white;
     background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%);
 }
@@ -338,4 +338,32 @@ header {
     color: white;
     text-align: center;
     padding: 40px 20px;
+}
+
+.btn-footer {
+    display: inline-flex;
+    gap: 8px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1.3rem;
+}
+
+.btn-footer img {
+    transition: filter 0.3s ease;;
+}
+
+.btn-footer:hover {
+    background: white;
+    color: #43c2ef;
+}
+
+.btn-footer:hover img {
+    filter: invert(40%) sepia(95%) saturate(2000%) hue-rotate(180deg);
 }
