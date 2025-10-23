@@ -254,10 +254,13 @@ header {
 .news-card {
     background: white;
     border-radius: 12px;
-    text-align: center;
     padding: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card p {
+    color: gray;
 }
 
 .news-card:hover {
@@ -267,8 +270,7 @@ header {
 
 .news-card-especial {
     border-radius: 12px;
-    padding: 10px;
-    text-align: center;
+    padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 100%);
@@ -283,7 +285,6 @@ header {
 }
 .btn-leer-mas {
     display: inline-flex;
-    align-items: center;
     gap: 8px;
     background: none;
     border: 2px solid #4FC3F7;
@@ -294,6 +295,7 @@ header {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 
 .btn-leer-mas:hover {
@@ -301,9 +303,18 @@ header {
     color: white;
 }
 
+.arrow-icon-right {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: rotate(-45deg);
+    margin-left: 4px;
+}
+
 .btn-leer-mas-special {
     display: inline-flex;
-    align-items: center;
     gap: 8px;
     background: none;
     border: 2px solid white;
@@ -314,10 +325,12 @@ header {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-bottom: 1.3rem;
 }
+
 .btn-leer-mas-special:hover {
     background: white;
-    color: #34495E;
+    color: #43c2ef;
 }
 
 .footer-section {
