@@ -67,7 +67,6 @@ header {
     max-width: 100%;
     margin: 25px 122px 61px;
     padding: 0;
-
 }
 
 .imagen-name {
@@ -166,14 +165,15 @@ header {
 }
 
 .btn-button:hover {
-    background-color: #f0f0f0;
-    color: #333333;
+    background-color: #43c2ef;
+    color: white;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-button:hover img {
     transform: translateX(5px);
+    filter: invert(100%) saturate(0%) brightness(200%);
 }
 
 .program-section {
@@ -371,3 +371,117 @@ header {
 .btn-information:hover img {
     filter: invert(40%) sepia(95%) saturate(2000%) hue-rotate(180deg);
 }
+
+.site-footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 50px 0;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    height: auto;
+    width: auto;
+}
+
+.footer-logo h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-column a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #3498db;
+}
+
+.footer-column ul i {
+    font-size: 1rem;
+    width: 25px;
+    color: #ffffff;
+}
+
+.social-title {
+    margin-top: 25px;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    margin-right: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #4a617a;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Responsividad para Móviles --- */
+/* @media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column ul li {
+        justify-content: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+} */
