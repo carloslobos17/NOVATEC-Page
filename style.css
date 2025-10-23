@@ -58,7 +58,6 @@ body {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -94,10 +93,17 @@ header {
 
 .nav-bar button {
     background-color: transparent;
-    border: transparent;
+    border: none;
     color: white;
     padding: 31px;
     margin: 16px 0px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent; /* subrayado invisible inicial */
+    transition: border-bottom 0.5s ease; /* transición aplicada aquí */
+}
+
+.nav-bar button:hover {
+    border-bottom: 2px solid white;
 }
 
 .title-container {
@@ -135,40 +141,39 @@ header {
 }
 
 .title-buttons-container {
-    width: 424px;
-    height: 44px;
     display: flex;
     flex-direction: row;
-    gap: 41px;
+    gap: 20px;
+    margin-top: 30px;
 }
 
-.title-button {
+.btn-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     background-color: white;
-    border: transparent;
     color: #827D7D;
     border-radius: 50px;
-    width: 186px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 7px;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.title-button button {
-    border: transparent;
-    background-color: white;
-    color: #827D7D;
-    padding: 0;
-    margin: 11px 0 11px 8px
+.btn-button img {
+    transition: transform 0.3s ease;
 }
 
-.title-button img {
-    padding: 0;
-    margin: 16px 13px 17px 0;
+.btn-button:hover {
+    background-color: #f0f0f0;
+    color: #333333;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.title-button-2 {
-    width: 197px;
+.btn-button:hover img {
+    transform: translateX(5px);
 }
 
 .program-section {
@@ -242,7 +247,6 @@ header {
 }
 
 .news-grid {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
@@ -340,7 +344,7 @@ header {
     padding: 40px 20px;
 }
 
-.btn-footer {
+.btn-information {
     display: inline-flex;
     gap: 8px;
     background: none;
@@ -355,15 +359,15 @@ header {
     margin-bottom: 1.3rem;
 }
 
-.btn-footer img {
+.btn-information img {
     transition: filter 0.3s ease;;
 }
 
-.btn-footer:hover {
+.btn-information:hover {
     background: white;
     color: #43c2ef;
 }
 
-.btn-footer:hover img {
+.btn-information:hover img {
     filter: invert(40%) sepia(95%) saturate(2000%) hue-rotate(180deg);
 }
