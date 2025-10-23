@@ -48,6 +48,23 @@ body {
     line-height: 140%;
 }
 
+.desktop-body-regular-text {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.noto-serif-desktop-h1{
+   font-family: "Noto Serif", serif;
+   font-optical-sizing: auto;
+   font-weight: 300;
+   font-size: 56px;
+   line-height: 120%;
+}
+
+
 .hero-section {
     width: 100%;
     height: 784px;
@@ -282,6 +299,8 @@ header {
 }
 
 .news-card p {
+    font-weight: 300;
+    font-size: 11px;
     color: gray;
 }
 
@@ -299,6 +318,10 @@ header {
     color: white;
 }
 
+.news-card-especial p{
+    font-weight: 300;
+    font-size: 11px;
+}
 
 .information-container {
     text-align: center;
@@ -442,9 +465,8 @@ header {
 
 .footer-column h3 {
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size: 20px;
     margin-bottom: 20px;
-    font-weight: bold;
 }
 
 .footer-column ul {
