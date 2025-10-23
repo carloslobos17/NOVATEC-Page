@@ -4,6 +4,25 @@
     max-width: 1200px;
 }
 
+.desktop-list {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: light;
+    font-size: 11px;
+    font-style: light;
+    color: rgb(6, 6, 6);
+}
+
+.desktop-h2-bold-carrera {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 45px;
+    font-style: bold;
+    color: rgb(6, 6, 6);
+}
+
+
 .career-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -188,3 +207,4 @@
     font-weight: bold;
     margin-right: 0.2rem;
 }
+
