@@ -343,6 +343,10 @@ header {
     color: white;
 }
 
+.news-card-especial:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
 .news-card-especial p{
     font-weight: 300;
     font-size: 11px;
