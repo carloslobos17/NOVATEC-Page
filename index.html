@@ -19,11 +19,11 @@
 <body>
     <div class="hero-section">
         <header>
-            <div class="imagen-name">
-                <img src="img/logo.png" alt="">
+            <div class="imagen-name" role="banner" aria-label="Logotipo de la universidad">
+                <img src="img/logo.png" alt="Logotipo de la universidad NOVATEC">
                 <h2 class="desktop-h2-bold">NOVATEC</h2>
             </div>
-            <nav class="nav-bar">
+            <nav class="nav-bar" aria-label="Menú principal">
                 <a href="index.html"><button class="desktop-subtitle-regular">Inicio</button></a>
                 <a href=""><button class="desktop-subtitle-regular">Nosotros</button></a>
                 <a href="carreras.html"><button class="desktop-subtitle-regular">Carrera</button></a>
@@ -31,125 +31,124 @@
                 <a href=""><button class="desktop-subtitle-regular">Vinculación social</button></a>
             </nav>
         </header>
-        <div class="title-container">
+        <div class="title-container" role="banner" aria-label="Sección principal">
             <div class="title">
                 <h1 class="desktop-title-hero">Forma parte de nuestra <br>comunidad universitaria</h1>
                 <p class="m3-headline-small">Transformamos vidas a través de la educación de excelencia, líderes <br>del mañana con valores sólidos.</p>
             </div>
-            <div class="title-buttons-container">
+            <div class="title-buttons-container" role="group" aria-label="Botones de llamada a la acción">
                 <a href="carreras.html" class="btn-button">
                     <span class="desktop-body-semi-bold">Nuestras Carreras</span>
-                    <img src="img/arrow-right.png" alt="">
+                    <img src="img/arrow-right.png" alt="" aria-hidden="true">
                 </a>
                 <a href="#" class="btn-button">
                     <span class="desktop-body-semi-bold">Solicita información</span>
-                    <img src="img/arrow-right.png" alt="">
+                    <img src="img/arrow-right.png" alt="" aria-hidden="true">
                 </a>
             </div>
         </div>
     </div>
 
     <section class="program-section">
-        <h1 class="program-h1 noto-serif-desktop-h1">Programas Académicos</h1>
-
+        <h1 class="program-h1 noto-serif-desktop-h1" id="programas-academicos">Programas Académicos</h1>
         <div class="program-container">
             <div class="program-card">
                 <div class="program-icon">
-                    <img src="img/ingenieriasLogo.png" alt="Ingeniería">
+                    <img src="img/ingenieriasLogo.png" alt="Icono de la Facultad de Ingeniería">
                 </div>
-                <h3 class="desktop-subtitle-regular">Facultad de Ingeniería y Arquitectura</h3>
+                <h3 class="desktop-subtitle-regular" id="programa-ingenieria">Facultad de Ingeniería y Arquitectura</h3>
                 <p class="desktop-subtitle-regular">Forma profesionales capaces de diseñar, construir e innovar en el ámbito tecnológico e industrial, integrando conocimientos científicos y creativos.</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="leer mas sobre la Facultad de Ingeniería">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
 
             <div class="program-card">
                 <div class="program-icon">
-                    <img src="img/humanidadesLogo.png" alt="Ciencias">
+                    <img src="img/humanidadesLogo.png" alt="Icono de la Facultad de Ciencias">
                 </div>
-                <h3 class="desktop-subtitle-regular">Facultad de Ciencias y Humanidades</h3>
+                <h3 class="desktop-subtitle-regular" id="programa-humanidades">Facultad de Ciencias y Humanidades</h3>
                 <p class="desktop-subtitle-regular">Promueve la investigación, la reflexión crítica y el desarrollo humano a través del estudio de las ciencias sociales, la educación y las artes.</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="Leer más sobre la Facultad de Humanidades">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
 
             <div class="program-card">
                 <div class="program-icon">
-                    <img src="img/economiaLogo.png" alt="Economía">
+                    <img src="img/economiaLogo.png" alt="Icono de la Facultad de Economía">
                 </div>
-                <h3 class="desktop-subtitle-regular">Facultad de Ciencias Económicas</h3>
+                <h3 class="desktop-subtitle-regular" id="programa-economia">Facultad de Ciencias Económicas</h3>
                 <p class="desktop-subtitle-regular">Prepara profesionales en las áreas de administración, contaduría y economía, con visión estratégica y compromiso con el desarrollo sostenible.</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="Leer más sobre la Facultad de Economía">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
 
-        <h1 class="news-h1 desktop-subtitle-regular">Noticias y Blog</h1>
-        <div class="news-principal">
+        <h1 class="news-h1 desktop-subtitle-regular" id="noticias-titulo">Noticias y Blog</h1>
+        <div class="news-principal" aria-labelledby="noticia-biblioteca">
             <div class="news-texto">
-                <h2 class="desktop-body-semi-bold">Nueva Biblioteca Tecnológica Abre sus Puertas</h2>
+                <h2 class="desktop-body-semi-bold" id="noticia-biblioteca">Nueva Biblioteca Tecnológica Abre sus Puertas</h2>
                 <p class="desktop-subtitle-regular">La universidad inauguró una moderna biblioteca equipada con tecnología de última generación, espacios de estudio colaborativo y acceso digital a miles de recursos académicos. Este nuevo edificio busca fomentar la investigación, la lectura y la innovación, brindando a los estudiantes un entorno cómodo, silencioso y adaptado a las nuevas metodologías de aprendizaje.</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="Leer más sobre la Nueva Biblioteca Tecnológica">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
             <div class="news-imagen">
-                <img src="img/NoticeBlogImage1.png" alt="noticia 1">
+                <img src="img/NoticeBlogImage1.png" alt="Interior de la nueva biblioteca moderna con estanterías y áreas de estudio">
             </div>
         </div>
 
         <div class="news-grid">
-            <div class="news-card">
+            <div class="news-card" aria-labelledby="noticia-graduacion">
                 <div class="news-icon">
-                    <img src="img/NoticeBlogImage2.png" alt="Ingeniería">
+                    <img src="img/NoticeBlogImage2.png" alt="Estudiantes lanzando sus birretes al aire en la ceremonia de graduación.">
                 </div>
-                <h3 class="desktop-body-semi-bold">Ceremonia de Graduación 2025: Nuevos Profesionales Listos para el Futuro</h3>
+                <h3 class="desktop-body-semi-bold" id="noticia-graduacion">Ceremonia de Graduación 2025: Nuevos Profesionales Listos para el Futuro</h3>
                 <p class="desktop-body-semi-bold">Más de 500 estudiantes recibieron su título en una emotiva ceremonia que celebró el esfuerzo, la dedicación y los logros académicos</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="Leer más sobre la ceremonia de graduación 2025">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
 
-            <div class="news-card-especial">
+            <div class="news-card-especial" aria-labelledby="noticia-energia-sostenible">
                 <h3 class="desktop-body-semi-bold">Investigadores Desarrollan Proyecto de Energía Sostenible</h3>
                 <p class="desktop-body-semi-bold">Estudiantes y docentes de ingeniería trabajan en un prototipo que aprovecha energía solar y eólica para comunidades rurales.</p>
-                <button class="btn-leer-mas-special">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas-special" aria-label="Leer más sobre el proyecto de energía sostenible">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
                 <div class="news-icon">
-                    <img src="img/NoticeBlogImage3.png" alt="Ingeniería">
+                    <img src="img/NoticeBlogImage3.png" alt="Paneles solares instalados en una zona rural">
                 </div>
             </div>
 
-            <div class="news-card">
+            <div class="news-card" aria-labelledby="noticia-intercambio-internacional">
                 <div class="news-icon">
-                    <img src="img/NoticeBlogImage4.png" alt="Ingeniería">
+                    <img src="img/NoticeBlogImage4.png" alt="Estudiantes en un programa de intercambio internacional">
                 </div>
-                <h3 class="desktop-body-semi-bold">Programa de Intercambio Internacional Abre Conovocatoria</h3>
+                <h3 class="desktop-body-semi-bold" id="noticia-intercambio-internacional">Programa de Intercambio Internacional Abre Conovocatoria</h3>
                 <p class="desktop-body-semi-bold">La oficina de relaciones internacionales invita a los estudiantes a aplicar para programas de movilidad en universidades de Europa y América.</p>
-                <button class="btn-leer-mas">
-                    Leer más <span class="arrow-icon-right"></span>
+                <button class="btn-leer-mas" aria-label="Leer más sobre el programa de intercambio internacional">
+                    Leer más <span class="arrow-icon-right" aria-hidden="true"></span>
                 </button>
             </div>
         </div>
-    </section>
+    </section aria-labelledby="informacion-contacto">
     <div class="information-container">
         <div class="news-principal">
-            <div class="information-texto">
-                <h2 class="desktop-h2-bold">¡Da el primer paso hacia tu éxito académico!</h2>
+            <div class="information-texto" id="informacion-contacto">
+                <h2 class="desktop-h2-bold" id="info-titulo">¡Da el primer paso hacia tu éxito académico!</h2>
                 <p class="desktop-subtitle-regular">
                     Conoce nuestras carreras, programas de becas y oportunidades de desarrollo profesional que te prepararán para el futuro.
                 </p>
-                <h3 class="desktop-body-semi-bold">Tel: +503 2345-6789</h3>
-                <button class="btn-information">
-                    Llamanos <img src="img/telephone-icon.png" alt="">
+                <h3 class="desktop-body-semi-bold" id="info-telefono +5032345-6789">Tel: +503 2345-6789</h3>
+                <button class="btn-information" aria-label="Llamanos al +503 2345-6789">
+                    Llamanos <img src="img/telephone-icon.png" alt="" aria-hidden="true">
                 </button>
             </div>
             <div class="news-imagen">
-                <img src="img/img-information.png" alt="noticia 1">
+                <img src="img/img-information.png" alt="Estudiantes felices conversando en el campus universitario" >
             </div>
         </div>
     </div>
@@ -175,16 +174,16 @@
                     <h3 class="desktop-body-semi-bold">Contáctanos:</h3>
                     <ul class="icons-footer">
                         <li>
-                            <img src="img/location.png" alt="">
+                            <img src="img/location.png" alt="" aria-hidden="true">
                             <span class="desktop-body-regular-text">Dirección</span>
                         </li>
                         <li>
-                            <img src="img/phone.png" alt="">
+                            <img src="img/phone.png" alt="" aria-hidden="true">
                             <span class="desktop-body-regular-text">+503 7788 7788</span>
                         </li>
                         <li>
-                            <img src="img/mail.png" alt="">
-                            <span class="desktop-body-regular-text">example@example.com</span>
+                            <img src="img/mail.png" alt="" aria-hidden="true">
+                            <span class="desktop-body-regular-text" >example@example.com</span>
                         </li>
                     </ul>
                 </div>
