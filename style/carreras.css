@@ -189,7 +189,6 @@
     font-weight: bold;
 }
 
-/* Reutiliza el estilo de lista para los bullets de la parte superior */
 .list-details ul {
     list-style: none;
     padding-left: 0;
@@ -210,3 +209,109 @@
     margin-right: 0.2rem;
 }
 
+@media (max-width: 992px) {
+    /* Reducimos el padding general y el gap */
+    .career-container {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Reducimos el tamaño de las imágenes pequeñas superiores */
+    .image-right-top,
+    .image-right-mid,
+    .image-right-bottom {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Reducimos el tamaño de las imágenes pequeñas inferiores (Arquitectura, Profesores) */
+    .list-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .list-section h3,
+    .list-details h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .career-container {
+        display: flex; /* Cambiamos de Grid a Flexbox */
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    .image-main,
+    .content-right,
+    .content-bottom-left,
+    .image-bottom-right {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .image-main,
+    .image-bottom-right {
+        height: 280px;
+        overflow: hidden;
+    }
+
+    .right-top-section,
+    .right-mid-section,
+    .right-bottom-section {
+        flex-direction: column; /* Apilamos Imagen y Lista */
+        align-items: center;
+        text-align: center;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #eee;
+    }
+
+    .right-mid-section {
+        flex-direction: column;
+    }
+
+    .image-right-top,
+    .image-right-mid,
+    .image-right-bottom {
+        width: 150px; /* Tamaño más ancho para el móvil */
+        height: 150px;
+        margin: 10px auto;
+    }
+
+    .list-section,
+    .list-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .list-section ul,
+    .list-details ul {
+        text-align: left;
+        margin: 0 auto;
+        padding: 0 10px;
+        max-width: 300px;
+    }
+
+    .content-bottom-left {
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .category-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .list-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .noto-serif-desktop-h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+}
