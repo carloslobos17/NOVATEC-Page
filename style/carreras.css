@@ -22,7 +22,9 @@
     color: rgb(6, 6, 6);
 }
 
-
+.careers-section h1{
+    margin-top: 32px;
+}
 .career-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
